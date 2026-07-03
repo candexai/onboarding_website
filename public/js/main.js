@@ -1,11 +1,87 @@
 // CandexAI Onboarding Guide — Interactivity
 
+const ACCESS_KEY = 'candexai_guide_access';
+
 document.addEventListener('DOMContentLoaded', () => {
+  initAccessGate();
+});
+
+function initApp() {
   initSidebar();
   initLightbox();
   initReadingProgress();
   initMobileMenu();
-});
+}
+
+function unlockGuide(email) {
+  sessionStorage.setItem(ACCESS_KEY, email);
+  document.body.classList.remove('access-locked');
+  const gate = document.getElementById('access-gate');
+  if (gate) {
+    gate.classList.add('hidden');
+    gate.setAttribute('aria-hidden', 'true');
+  }
+  initApp();
+}
+
+function initAccessGate() {
+  const savedEmail = sessionStorage.getItem(ACCESS_KEY);
+  if (savedEmail) {
+    unlockGuide(savedEmail);
+    return;
+  }
+
+  const form = document.getElementById('access-form');
+  const emailInput = document.getElementById('access-email');
+  const errorEl = document.getElementById('access-error');
+  const submitBtn = document.getElementById('access-submit');
+
+  if (!form || !emailInput || !submitBtn) {
+    document.body.classList.remove('access-locked');
+    initApp();
+    return;
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = emailInput.value.trim().toLowerCase();
+
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      if (errorEl) {
+        errorEl.textContent = 'Please enter a valid email address.';
+        errorEl.hidden = false;
+      }
+      return;
+    }
+
+    if (errorEl) errorEl.hidden = true;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Verifying...';
+
+    try {
+      const res = await fetch('/api/access', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Access request failed.');
+      }
+
+      unlockGuide(email);
+    } catch (err) {
+      if (errorEl) {
+        errorEl.textContent = err.message || 'Something went wrong. Please try again.';
+        errorEl.hidden = false;
+      }
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Continue to Guide';
+    }
+  });
+}
 
 function initSidebar() {
   const links = document.querySelectorAll('.sidebar a[href^="#"]');
