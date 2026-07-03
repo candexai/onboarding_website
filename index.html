@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CandexAI Platform Guide — How to Use Synervo</title>
+  <meta name="description" content="Step-by-step guide to using the CandexAI (Synervo) platform — agents, knowledge bases, chatbot, phone, automations, integrations, and more." />
+  <link rel="icon" href="public/images/candex-logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="public/css/styles.css" />
+</head>
+<body>
+
+  <div class="reading-progress"></div>
+
+  <header class="site-header">
+    <button class="menu-toggle" aria-label="Open menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+    <a href="#top" class="logo">
+      <img src="public/images/candex-logo.png" alt="CandexAI Logo" />
+      <span>CandexAI</span>
+    </a>
+    <span class="badge">Platform Guide</span>
+    <div class="header-actions">
+      <a href="https://candexai.co.in" class="btn btn-outline" target="_blank" rel="noopener">Go to Platform</a>
+      <a href="#account-access" class="btn btn-primary">Start Guide</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="sidebar-section">
+        <h4>Account</h4>
+        <a href="#account-access"><span class="num">1</span> Sign Up & Sign In</a>
+      </div>
+      <div class="sidebar-section">
+        <h4>Overview</h4>
+        <a href="#getting-started"><span class="num">2</span> Getting Started</a>
+        <a href="#navigation"><span class="num">3</span> Navigation & Sidebar</a>
+      </div>
+      <div class="sidebar-section">
+        <h4>AI & Agents</h4>
+        <a href="#knowledge-base"><span class="num">4</span> Knowledge Base</a>
+        <a href="#voice-clone"><span class="num">5</span> Voice Clone</a>
+        <a href="#ai-integrations"><span class="num">6</span> AI Integrations</a>
+        <a href="#agents"><span class="num">7</span> Agents & Studio</a>
+        <a href="#test-voice"><span class="num">8</span> Test Voice Agent</a>
+        <a href="#campaigns"><span class="num">9</span> Batch Campaigns</a>
+      </div>
+      <div class="sidebar-section">
+        <h4>Channels & Inbox</h4>
+        <a href="#conversations"><span class="num">10</span> Conversations</a>
+        <a href="#chatbot"><span class="num">11</span> Chatbot Setup</a>
+        <a href="#chatbot-test"><span class="num">12</span> Chatbot Test & Widget</a>
+        <a href="#phone"><span class="num">13</span> Phone Numbers</a>
+      </div>
+      <div class="sidebar-section">
+        <h4>Automation & Data</h4>
+        <a href="#automations"><span class="num">14</span> Automations</a>
+        <a href="#analytics"><span class="num">15</span> Analytics</a>
+        <a href="#crm"><span class="num">16</span> CRM</a>
+        <a href="#contacts"><span class="num">17</span> Contacts</a>
+      </div>
+      <div class="sidebar-section">
+        <h4>Settings</h4>
+        <a href="#integrations"><span class="num">18</span> Integrations</a>
+        <a href="#team"><span class="num">19</span> Team Members</a>
+        <a href="#profile"><span class="num">20</span> Profile & Billing</a>
+      </div>
+    </nav>
+
+    <main class="main">
+
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <h1>Your complete guide to <em>CandexAI</em></h1>
+        <p>Everything you need to set up AI agents, chatbots, phone lines, automations, and integrations — with screenshots showing exactly where to click.</p>
+      </section>
+
+      <!-- SECTION 1: ACCOUNT ACCESS -->
+      <section class="guide-section" id="account-access">
+        <div class="section-header">
+          <div class="section-label">Section 1</div>
+          <h2>Create Account & Sign In</h2>
+          <p>Start here — create your CandexAI workspace or sign in to an existing account. After login, use this onboarding guide to set up the platform.</p>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Create a New Account</h3>
+            <p>For first-time users who don't have a CandexAI workspace yet.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/35-sign-up.png" alt="Create account page" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <strong>app.candexai.co.in</strong> and open the sign-up page</li>
+              <li>Choose a quick sign-up option: <span class="click-hint">Google</span>, <span class="click-hint">Facebook</span>, or <span class="click-hint">Microsoft</span></li>
+              <li>Or scroll to <strong>Or Sign Up With Email</strong> and fill in:
+                <ul style="margin-top:8px;padding-left:20px;color:var(--text-muted)">
+                  <li><strong>Full Name</strong></li>
+                  <li><strong>Email Address</strong></li>
+                  <li><strong>Password</strong> (at least 6 characters)</li>
+                  <li><strong>Confirm Password</strong></li>
+                </ul>
+              </li>
+              <li>Complete the <strong>reCAPTCHA</strong> ("I'm not a robot") checkbox</li>
+              <li>Click <span class="click-hint">Continue</span> to create your account and enter the platform</li>
+              <li>Already registered? Click <span class="click-hint">Sign in</span> at the bottom instead</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Sign In to Your Workspace</h3>
+            <p>Returning users sign in here to access Conversations, AI, Automations, and the rest of the platform.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/36-sign-in.png" alt="Sign in page" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <strong>app.candexai.co.in</strong> and open the sign-in page</li>
+              <li>Sign in with <span class="click-hint">Google</span>, <span class="click-hint">Facebook</span>, <span class="click-hint">Microsoft</span>, or email under <strong>Or continue with email</strong></li>
+              <li>Enter your <strong>Email address</strong> and <strong>Password</strong></li>
+              <li>Forgot your password? Click <span class="click-hint">Forgot password?</span> next to the password field</li>
+              <li>Complete the <strong>reCAPTCHA</strong> if shown</li>
+              <li>Click <span class="click-hint">Sign In</span> — you'll be directed into your CandexAI dashboard</li>
+              <li>From there, open <span class="nav-hint">Onboarding hub</span> in the sidebar to follow setup tasks and unlock bonus minutes</li>
+            </ol>
+            <div class="info-box tip">
+              <strong>💡 After you sign in</strong>
+              Continue with Section 2 below (Getting Started) or jump to any topic in the left sidebar. This guide walks you through every part of the platform step by step.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK START -->
+      <div class="quick-start" id="getting-started">
+        <h2>⚡ 5-Step Quick Start</h2>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="step-num">1</div>
+            <h3>Connect Channels</h3>
+            <p>Go to Integrations → connect WhatsApp, Gmail, Meta, or phone</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">2</div>
+            <h3>Add Knowledge</h3>
+            <p>AI → Knowledge Base → upload docs, URLs, or paste text</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">3</div>
+            <h3>Configure Chatbot</h3>
+            <p>Configuration → Chatbot → set name, color, greeting & prompt</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">4</div>
+            <h3>Create Voice Agent</h3>
+            <p>AI → Agents → pick a template or build from scratch</p>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">5</div>
+            <h3>Automate & Measure</h3>
+            <p>Build automations, launch campaigns, track in Analytics</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <h3>The Onboarding Hub</h3>
+          <p>Track your setup progress and unlock bonus minutes from the Onboarding Hub.</p>
+        </div>
+        <div class="guide-card-body">
+          <div class="screenshot-wrap">
+            <img src="public/images/screenshots/01-onboarding-hub.png" alt="Onboarding hub setup checklist" loading="lazy" />
+          </div>
+          <p class="screenshot-caption">Click any image to zoom in</p>
+          <ol class="steps-list">
+            <li>Click <span class="nav-hint">Onboarding hub</span> at the bottom of the left sidebar</li>
+            <li>Work through the <strong>Setup Checklist</strong> tasks at your own pace to unlock <strong>+200 bonus minutes</strong></li>
+            <li>Use <span class="click-hint">Start AI Tour</span> or <span class="click-hint">Open Setup Assistant</span> for guided help</li>
+            <li>Watch your <strong>Overall completion</strong> progress bar and <strong>Your queue</strong> as you complete each step</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- SECTION 3: NAVIGATION -->
+      <section class="guide-section" id="navigation">
+        <div class="section-header">
+          <div class="section-label">Section 3</div>
+          <h2>Navigation & Sidebar</h2>
+          <p>The left sidebar is your main navigation. Every feature of the platform is accessible from here.</p>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Understanding the Sidebar Menu</h3>
+            <p>Click any item in the left sidebar to navigate to that section of the platform.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap tall">
+              <img src="public/images/screenshots/02-sidebar-navigation.png" alt="CandexAI sidebar navigation menu" loading="lazy" />
+            </div>
+            <p class="screenshot-caption">Click any image to zoom in</p>
+
+            <table class="guide-table">
+              <thead>
+                <tr><th>Menu Item</th><th>What It Does</th><th>When to Use</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Conversations</strong></td><td>Unified inbox for all customer messages</td><td>Reply to WhatsApp, chat, Instagram, phone transcripts</td></tr>
+                <tr><td><strong>AI</strong></td><td>Knowledge bases, voice agents, AI behavior</td><td>Upload docs, create agents, tune prompts</td></tr>
+                <tr><td><strong>Automations</strong></td><td>No-code workflow builder</td><td>Automate actions when events happen</td></tr>
+                <tr><td><strong>Contacts</strong></td><td>Contact database with tags & lists</td><td>Import, segment, and manage your audience</td></tr>
+                <tr><td><strong>Campaigns</strong></td><td>Batch voice outreach</td><td>Call contact lists with a voice agent</td></tr>
+                <tr><td><strong>Chatbot Test</strong></td><td>Preview & test your website widget</td><td>Before going live on your site</td></tr>
+                <tr><td><strong>Analytics</strong></td><td>Usage dashboards & reports</td><td>Track calls, conversations, channel mix</td></tr>
+                <tr><td><strong>CRM</strong></td><td>Deals, leads, custom tables</td><td>Sync from HubSpot, Zoho, Salesforce</td></tr>
+                <tr><td><strong>Configuration</strong></td><td>Chatbot, phone, escalation settings</td><td>Style widget, import phone numbers</td></tr>
+                <tr><td><strong>Billing</strong></td><td>Plan, minutes balance, profile</td><td>Check usage and manage subscription</td></tr>
+                <tr><td><strong>Integrations</strong></td><td>Connect external tools</td><td>Gmail, Meta, CRMs, Shopify, etc.</td></tr>
+                <tr><td><strong>Team</strong></td><td>Invite team members</td><td>Collaborate with colleagues</td></tr>
+                <tr><td><strong>Onboarding hub</strong></td><td>Setup checklist & bonus minutes</td><td>Get started and track progress</td></tr>
+              </tbody>
+            </table>
+
+            <div class="info-box tip">
+              <strong>💡 Tip</strong>
+              The sidebar can be collapsed by clicking the arrow at the bottom. Your language and theme (light/dark) can be changed from the globe and sun icons in the top-right header.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: KNOWLEDGE BASE -->
+      <section class="guide-section" id="knowledge-base">
+        <div class="section-header">
+          <div class="section-label">Section 4</div>
+          <h2>Knowledge Base</h2>
+          <p>Teach your AI what your business knows — so chatbot and voice agents answer from your real content, not guesses.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why create this?</h4>
+            Without a knowledge base, AI only uses its general training. A knowledge base gives it <strong>your</strong> FAQs, policies, product info, and website content — so answers match your business.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            Once status is <strong>Ready</strong>, link the knowledge base to your <strong>chatbot</strong> (Configuration → Chatbot) and <strong>voice agents</strong> (when creating/editing an agent). Customers get accurate answers on chat and phone.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 1 — Open the Knowledge Bases Page</h3>
+            <p>Navigate to AI in the sidebar, then open the Knowledge Base area.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/04-knowledge-bases.png" alt="Knowledge bases list page" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Click <span class="nav-hint">AI</span> in the left sidebar, then open <strong>Knowledge base</strong></li>
+              <li>You'll see summary counts: <strong>Total, Ready, Processing, Failed</strong></li>
+              <li>Existing knowledge bases appear as cards showing name, type, date, and a <strong>Ready</strong> status</li>
+              <li>Click <span class="click-hint">+ Create knowledge base</span> in the top-right to add a new one</li>
+              <li>Use <span class="click-hint">Ingest data</span> on any card to add more content to an existing knowledge base</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 2 — Create a Knowledge Base</h3>
+            <p>A modal will open where you name your knowledge base and add your first document.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/22-create-knowledge-base.png" alt="Create knowledge base modal" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Enter a <strong>Name</strong> for your knowledge base (e.g. "Product FAQ", "Support Docs")</li>
+              <li>Choose a <strong>Source type</strong>:
+                <ul style="margin-top:8px;padding-left:20px;color:var(--text-muted)">
+                  <li><strong>Text</strong> — paste FAQ or policy text directly</li>
+                  <li><strong>URL</strong> — provide a website link to scrape</li>
+                  <li><strong>File</strong> — upload a PDF, DOCX, or TXT file</li>
+                </ul>
+              </li>
+              <li>Add your <strong>Content</strong> in the text area (or upload file / enter URL)</li>
+              <li>Click <span class="click-hint">Create & ingest</span> to process and index your content</li>
+            </ol>
+            <div class="info-box note">
+              <strong>ℹ️ Note</strong>
+              After creation, the platform will ingest (index) your content. This may take a few seconds. Once the status shows <strong>Ready</strong>, link it to your chatbot and voice agents for consistent answers.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: VOICE CLONE -->
+      <section class="guide-section" id="voice-clone">
+        <div class="section-header">
+          <div class="section-label">Section 5</div>
+          <h2>Voice Clone</h2>
+          <p>Make your voice agent sound like a real person from your team — using a short audio sample.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why clone a voice?</h4>
+            Standard AI voices sound generic. Voice clone lets you upload a short recording and create a custom voice that matches your brand or a specific team member — so phone calls feel more personal and trustworthy.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            Your cloned voice appears in <strong>Voice library</strong> when creating or editing a voice agent. Select it under <strong>Voice → Voice library</strong> and every call that agent makes will use your custom voice.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Cloning a Custom Voice</h3>
+            <p>Go to AI → Voice Clone to build and manage your own voices.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/07-voice-clone.png" alt="Voice clone page" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">AI → Voice clone</span> in the sidebar</li>
+              <li>Switch between the <strong>Voice library</strong> tab (your saved clones) and the <strong>Voice clone</strong> tab</li>
+              <li>Click <span class="click-hint">+ Clone new voice</span> in the top-right to create a voice from a short recording or audio file</li>
+              <li>If you have no voices yet, click <span class="click-hint">Get started →</span> in the empty state</li>
+              <li>Once created, your voice appears in <strong>Your library</strong> and can be assigned to any agent under <strong>Voice → Voice library</strong></li>
+              <li>Click <span class="click-hint">Refresh</span> to update the list after cloning</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: AI INTEGRATIONS -->
+      <section class="guide-section" id="ai-integrations">
+        <div class="section-header">
+          <div class="section-label">Section 6</div>
+          <h2>AI Integrations & Tools</h2>
+          <p>Give your AI superpowers — let it send emails, call your APIs, and take real actions during chat or phone calls.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why create AI tools?</h4>
+            Knowledge bases help AI <em>answer questions</em>. AI tools let AI <em>do things</em> — check order status from your API, send a confirmation email, fetch patient records, etc. The AI decides when to use each tool based on the description you write.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            During a live chat or call, when a customer asks something that matches your tool description, the AI automatically runs that tool. For example: visitor books an appointment → AI sends a confirmation email. Or caller asks for order status → AI calls your API and reads back the result.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 1 — Open AI Integrations</h3>
+            <p><strong>Important:</strong> This is <em>not</em> the same as Settings → Integrations. This page is only for tools the AI can use mid-conversation.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/30-ai-integrations-empty.png" alt="AI integrations empty state" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">AI → Integrations</span> from the AI sidebar</li>
+              <li>Read the <strong>How integrations work</strong> box at the top:
+                <ul style="margin-top:8px;padding-left:20px;color:var(--text-muted)">
+                  <li><strong>Email integrations</strong> use Gmail connected under Settings → Integrations</li>
+                  <li><strong>HTTP tools</strong> let AI call external APIs for chatbot, voice agent, or both</li>
+                  <li>A clear <strong>Description</strong> tells the AI when to use each tool</li>
+                </ul>
+              </li>
+              <li>Click <span class="click-hint">Refresh</span> to update the list after creating tools</li>
+              <li>Click <span class="click-hint">+ New Integration</span> in the top-right to create your first AI tool</li>
+            </ol>
+            <div class="info-box note">
+              <strong>ℹ️ Difference from Settings → Integrations</strong>
+              Settings → Integrations connects platforms like Gmail, CRMs, WhatsApp, and Shopify. AI → Integrations creates callable tools that the AI can use during chat or voice conversations.
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 2 — Create an HTTP Tool</h3>
+            <p>Connect any external API so your chatbot or voice agent can fetch data or trigger actions in your own systems.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/31-ai-http-tool.png" alt="Create HTTP tool modal" loading="lazy" />
+            </div>
+
+            <div class="purpose-grid">
+              <div class="purpose-box why">
+                <h4>When to use HTTP tools</h4>
+                Use when you have an existing API — hospital records, order lookup, inventory check, booking system, etc. The AI calls your API URL and uses the response in its reply.
+              </div>
+              <div class="purpose-box after">
+                <h4>After registration</h4>
+                If target is <strong>Voice agent</strong>, the tool is auto-attached to the agent you select. If <strong>Chatbot</strong> or <strong>Both</strong>, the tool is available in widget and dashboard chat. The AI reads your description to know when to invoke it.
+              </div>
+            </div>
+
+            <ol class="steps-list">
+              <li>Click <span class="click-hint">+ New Integration</span>, then select the <strong>HTTP Tool</strong> tab</li>
+              <li>Choose <strong>Target Platform</strong>:
+                <ul style="margin-top:8px;padding-left:20px;color:var(--text-muted)">
+                  <li><strong>Chatbot</strong> — website widget + dashboard chat only</li>
+                  <li><strong>Voice agent</strong> — phone calls only (you must pick which agent)</li>
+                  <li><strong>Both</strong> — same tool works in chat and on calls</li>
+                </ul>
+              </li>
+              <li>Enter <strong>Function name</strong> (e.g. <code>get_patients</code>, <code>check_order_status</code>) — this is the internal name the AI uses</li>
+              <li>Write <strong>Description</strong> in plain English: what the tool does AND when the AI should use it. This is the most important field — be specific!</li>
+              <li>Configure the <strong>HTTP Endpoint</strong>:
+                <ul style="margin-top:8px;padding-left:20px;color:var(--text-muted)">
+                  <li><strong>Method</strong> — GET (fetch data), POST (create/send), PATCH (update)</li>
+                  <li><strong>URL</strong> — your API endpoint (e.g. <code>https://api.yoursite.com/orders</code>)</li>
+                  <li><strong>Parameters</strong> — what data the AI should collect from the user and send (name, order ID, etc.)</li>
+                  <li><strong>Auth</strong> — Bearer token, API key, or Basic auth if your API requires it</li>
+                </ul>
+              </li>
+              <li>If target is <strong>Voice agent</strong>, select the agent from the dropdown</li>
+              <li>Click <span class="click-hint">Register HTTP tool</span></li>
+            </ol>
+            <div class="info-box tip">
+              <strong>💡 Description example</strong>
+              "Use this when the customer asks about their order status. Only call after you have collected their order ID. Returns shipping status and estimated delivery date."
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 3 — Create an Email Tool</h3>
+            <p>Let the chatbot automatically send Gmail emails when certain things happen in a conversation.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/32-ai-email-tool.png" alt="Create email integration modal" loading="lazy" />
+            </div>
+
+            <div class="purpose-grid">
+              <div class="purpose-box why">
+                <h4>When to use email tools</h4>
+                Use when the chatbot should send real emails — appointment confirmations, follow-ups, sending info to the customer, notifying your team. Works in widget chat and dashboard chat.
+              </div>
+              <div class="purpose-box after">
+                <h4>After registration</h4>
+                During chat, when the visitor's message matches your condition (e.g. "appointment booked"), the AI sends the email through your connected Gmail. You can use templates like <code>confirm_appointment</code> or build custom emails with CC/BCC.
+              </div>
+            </div>
+
+            <ol class="steps-list">
+              <li><strong>First:</strong> Connect Gmail under <span class="nav-hint">Settings → Integrations → Gmail</span> (required before email tools work)</li>
+              <li>Go to <span class="nav-hint">AI → Integrations</span> → <span class="click-hint">+ New Integration</span> → <strong>Email</strong> tab</li>
+              <li>Pick a template or click <span class="click-hint">Skip — build from scratch</span>:
+                <ul style="margin-top:8px;padding-left:20px;color:var(--text-muted)">
+                  <li><strong>confirm_appointment</strong> — sends confirmation when user books an appointment</li>
+                  <li><strong>send_email</strong> — general email with optional CC and BCC</li>
+                </ul>
+              </li>
+              <li>Enter <strong>Integration name</strong> (e.g. <code>confirm_booking</code>)</li>
+              <li>Fill <strong>When should the chatbot send this email?</strong> — write in everyday language when the AI should trigger this (e.g. "When user successfully booked an appointment")</li>
+              <li>Configure <strong>Email fields</strong> (recipient, subject, body) and click <span class="click-hint">+ Add field</span> for dynamic values from the conversation</li>
+              <li>Click <span class="click-hint">Create email tool</span></li>
+            </ol>
+            <div class="info-box warning">
+              <strong>⚠️ Prerequisite</strong>
+              Gmail must be connected under Settings → Integrations before email tools can send. Email tools run via your connected Gmail account.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: AGENTS & STUDIO -->
+      <section class="guide-section" id="agents">
+        <div class="section-header">
+          <div class="section-label">Section 7</div>
+          <h2>Agents & Agent Studio</h2>
+          <p>Voice agents are AI phone assistants — they answer inbound calls and make outbound calls on your behalf.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why create a voice agent?</h4>
+            A voice agent handles phone conversations automatically — booking appointments, answering FAQs, qualifying leads, or following a script you define. One agent can handle hundreds of calls without your team picking up the phone.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            Assign a phone number (Configuration → Phone) and the agent answers inbound calls or makes outbound calls. Call transcripts appear in <strong>Conversations</strong>. Link a <strong>knowledge base</strong> for accurate answers and <strong>CRM tools</strong> to read/write data during calls.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 1 — Open the Agents Page</h3>
+            <p>See all your voice agents and create new ones here.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/05-agents-list.png" alt="Agents list page" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">AI → Agents</span> in the sidebar</li>
+              <li>Each row shows the agent <strong>name</strong>, <strong>agent ID</strong>, <strong>language</strong>, and <strong>created date</strong></li>
+              <li>Click <span class="click-hint">Browse templates</span> to start from a ready-made agent</li>
+              <li>Click <span class="click-hint">+ New agent</span> in the top-right to create a new agent</li>
+              <li>Click any agent row to open and edit its prompts, voice, and workflow</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 2 — Choose How to Start</h3>
+            <p>Pick a template for a quick start, or build a blank agent for full control.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/23-new-agent.png" alt="New agent page with templates" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Click <span class="click-hint">Browse templates</span> to see all 59+ ready-made agent templates</li>
+              <li>Or pick a <strong>Popular Starter</strong> like "Customer support" or "Appointment booking"</li>
+              <li>Or click <span class="click-hint">Blank agent</span> at the bottom to start from scratch</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 3 — Browse & Select a Template</h3>
+            <p>Templates come with pre-built conversation flows, prompts, and workflows.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/24-browse-agent-templates.png" alt="Browse agent templates" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Use the <strong>search bar</strong> to find a specific template (e.g. "appointment", "sales")</li>
+              <li>Filter by category: <strong>General, Sales, Support, Booking, Healthcare, Education</strong></li>
+              <li>Click a template card on the left to preview its <strong>workflow</strong> on the right</li>
+              <li>Review the conversation flow steps (Start → Greeting → Collect info → Confirm → End)</li>
+              <li>When satisfied, click <span class="click-hint">Use template</span> in the top-right</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 4 — Configure Your Agent</h3>
+            <p>Set the agent name, first message, and system prompt. The workflow preview updates live on the right.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/25-create-agent-configure.png" alt="Configure new agent" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Enter an <strong>Agent name</strong> (e.g. "Appointment Booking")</li>
+              <li>Write the <strong>First message</strong> — what the agent says when the call connects</li>
+              <li>Edit the <strong>System prompt</strong> to define the agent's role, tasks, and rules. Click <span class="click-hint">Generate</span> to auto-write one with AI</li>
+              <li>Review the <strong>Workflow</strong> diagram on the right to understand the call flow</li>
+              <li>Click <span class="click-hint">Continue to studio</span> when ready</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 5 — Set Voice & Final Settings</h3>
+            <p>Choose a voice, language, and link knowledge bases before creating the agent.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/26-new-agent-voice.png" alt="New agent voice and settings" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>On the left: refine your <strong>System prompt</strong> and <strong>First message</strong>. Use variables like <code>{{name}}</code>, <code>{{email}}</code>, <code>{{phone}}</code></li>
+              <li>On the right under <strong>Identity</strong>: set agent name and <strong>Language</strong></li>
+              <li>Under <strong>Voice</strong>: browse <strong>Standard voices</strong> or the <strong>Voice library</strong> (your clones). Click the ▶ play icon to preview each voice</li>
+              <li>Under <strong>Advanced</strong>: expand to link <strong>Knowledge bases</strong> and set <strong>escalation</strong> rules</li>
+              <li>Click <span class="click-hint">Create agent</span> at the bottom-right to finish</li>
+            </ol>
+            <div class="info-box tip">
+              <strong>💡 Tip</strong>
+              Click "Preview" next to the first message to hear how it sounds with the selected voice before creating the agent.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 8: TEST VOICE -->
+      <section class="guide-section" id="test-voice">
+        <div class="section-header">
+          <div class="section-label">Section 8</div>
+          <h2>Test Voice Agent</h2>
+          <p>Test your voice agent with a real outbound call before going live.</p>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Making a Test Outbound Call</h3>
+            <p>Fill in the details to initiate a test call from your agent.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap tall">
+              <img src="public/images/screenshots/06-test-outbound-call.png" alt="Test outbound call dialog" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">AI → Test voice agent</span> in the sidebar (under AI section)</li>
+              <li>In the <strong>Test Outbound Call</strong> dialog, select an <strong>Agent</strong> from the dropdown</li>
+              <li>Select an <strong>Agent Phone Number</strong> (must have outbound support configured)</li>
+              <li>Choose a <strong>Caller Provider</strong> (default: SIP)</li>
+              <li>Enter the <strong>Customer Phone Number</strong>, <strong>Customer Name</strong>, and <strong>Customer Email</strong></li>
+              <li>Click <span class="click-hint">Start test call</span> to initiate the call</li>
+            </ol>
+            <div class="info-box warning">
+              <strong>⚠️ Important</strong>
+              You need an outbound phone number configured under Configuration → Phone before you can make test or outbound calls. See the Phone Numbers section below.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 9: CAMPAIGNS -->
+      <section class="guide-section" id="campaigns">
+        <div class="section-header">
+          <div class="section-label">Section 9</div>
+          <h2>Batch Call Campaigns</h2>
+          <p>Call many contacts at once with your voice agent — perfect for outreach, reminders, and follow-ups.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why use batch calls?</h4>
+            Instead of calling contacts one by one, batch calls let your <strong>voice agent</strong> call an entire list automatically — from a CSV upload or a saved contact list. Great for appointment reminders, sales outreach, or survey calls.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            The platform dials each contact using your chosen agent and phone number. Call outcomes appear in <strong>Conversations</strong> (as transcripts) and you can track batch status under <strong>View Batch Calls</strong>. Use <strong>Analytics</strong> to see call minutes used.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 1 — Create a Batch Call</h3>
+            <p>Set up who to call, which agent handles the call, and when to start.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/10-batch-campaigns.png" alt="Create batch call campaign" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">Campaigns</span> in the left sidebar</li>
+              <li>Click <span class="click-hint">+ Batch Call</span> in the top-right (or use the create form on the Campaigns page)</li>
+              <li>Enter a <strong>Batch name</strong> (e.g. "Q1 Customer Outreach") — required, helps you identify this campaign later</li>
+              <li>Select a <strong>Source Phone Number</strong> — must have outbound support (set up under Configuration → Phone first)</li>
+              <li>Select an <strong>Agent</strong> — the voice agent that speaks on each call (create one under AI → Agents first)</li>
+              <li>Choose <strong>Start time</strong>: <em>Start now</em> for immediate launch, or <em>Schedule date and time</em> for later</li>
+              <li><strong>Target concurrency limit</strong> (optional) — how many calls run at the same time. Leave empty to use platform default</li>
+              <li>Add <strong>Recipients</strong>:
+                <ul style="margin-top:8px;padding-left:20px;color:var(--text-muted)">
+                  <li><strong>Upload via CSV</strong> — file must include headers: <code>name</code>, <code>email</code>, <code>phone_number</code> (or <code>first_name</code> + <code>last_name</code>)</li>
+                  <li><strong>Use existing contact list</strong> — pick a list you created in Contacts</li>
+                </ul>
+              </li>
+              <li>Click <span class="click-hint">Submit a Batch Call</span> when all required fields are filled</li>
+            </ol>
+            <div class="info-box warning">
+              <strong>⚠️ Before you start</strong>
+              You need: (1) an outbound phone number, (2) at least one voice agent, (3) a contact list or CSV. The Submit button stays disabled until everything is ready.
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 2 — View & Track Batch Calls</h3>
+            <p>Monitor running and completed batch jobs from the Batch Calls list.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/37-batch-calls-list.png" alt="View batch calls list" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>From <span class="nav-hint">Campaigns</span>, click <span class="click-hint">View Batch Calls</span> in the top-right</li>
+              <li>The <strong>Batch Calls</strong> page lists all your outbound batch jobs</li>
+              <li>Click <span class="click-hint">Create Batch Call</span> here to start a new campaign</li>
+              <li>Click the <strong>refresh icon</strong> to update the list with latest status</li>
+              <li>When batches are running, you'll see each job here with its status. When empty, it shows "No batch calls found" until you create your first one</li>
+              <li>Individual call transcripts from batch campaigns also appear in <span class="nav-hint">Conversations</span> under the Voice Calls channel</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 10: CONVERSATIONS -->
+      <section class="guide-section" id="conversations">
+        <div class="section-header">
+          <div class="section-label">Section 10</div>
+          <h2>Conversations Inbox</h2>
+          <p>One place for every customer message — WhatsApp, website chat, Instagram, Facebook, phone transcripts, and more.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why use Conversations?</h4>
+            Without it, messages are scattered across apps. Conversations puts every customer interaction in one inbox so your team can reply, review AI responses, and take over when needed.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            Messages from all connected channels land here automatically. AI replies first using your chatbot settings. You can <strong>Take Control</strong> to reply manually, or get an email alert when escalation rules trigger.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Using the Conversations Inbox</h3>
+            <p>All inbound messages and call transcripts from every connected channel land here.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/03-conversations.png" alt="Conversations inbox" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Click <span class="nav-hint">Conversations</span> in the left sidebar</li>
+              <li>Use <strong>channel filters</strong> at the top (All Channels, Website Chat, WhatsApp, Instagram, Facebook, Telegram, Voice Calls, Auto Dialer)</li>
+              <li>Use the <strong>date range picker</strong> (e.g. Last 7 days) and <strong>Folders</strong> to organize threads</li>
+              <li>Click any <strong>conversation thread</strong> in the left list to open it and read the full history</li>
+              <li>Type a reply in the message box at the bottom and press <strong>Send</strong> — it goes out on the same channel the customer used</li>
+              <li>Use <strong>Take Control</strong> to pause AI and reply manually on an active thread</li>
+            </ol>
+            <div class="info-box tip">
+              <strong>💡 Tip</strong>
+              By default, your AI chatbot handles first-line responses. Use "Take Control" when you need to step in for sensitive cases, sales closes, or when the bot is stuck.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 11: CHATBOT -->
+      <section class="guide-section" id="chatbot">
+        <div class="section-header">
+          <div class="section-label">Section 11</div>
+          <h2>Chatbot Configuration</h2>
+          <p>Style and train the AI that answers visitors on your website, WhatsApp, Instagram, and Facebook.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why configure the chatbot?</h4>
+            This is where you set how your AI looks (logo, color, name) and how it behaves (greeting, personality, language). Link your knowledge base so it answers from your content, not generic AI responses.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            Visitors see your branded chat widget on the website. AI handles first-line questions 24/7. When escalation rules fire (e.g. "visitor asks for human"), you get an email with the conversation context.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Customization — Appearance & Branding</h3>
+            <p>Go to Configuration → Chatbot to style your widget.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/16-chatbot-customization.png" alt="Chatbot customization" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Navigate to <span class="nav-hint">Configuration → Chatbot</span></li>
+              <li><strong>Logo</strong>: Click the upload box to add your brand logo to the chat widget</li>
+              <li><strong>Chatbot Name</strong>: Enter the name shown in the widget header (e.g. "AI Assistant")</li>
+              <li><strong>Widget Color</strong>: Pick a preset color or enter a custom hex code (e.g. #6366f1)</li>
+              <li><strong>Default Knowledge Bases</strong>: Click the dropdown to select which knowledge bases the chatbot uses. Click <span class="click-hint">Select All</span> or <span class="click-hint">Clear</span> as needed</li>
+              <li><strong>System Prompt</strong>: Write the AI personality and behavior rules. Use <span class="click-hint">Generate</span> for AI-assisted writing, or pick a previous prompt from the dropdown</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Behavior — Escalation, Greeting & Language</h3>
+            <p>Configure when humans get alerted and how the bot greets visitors.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/17-chatbot-behavior.png" alt="Chatbot behavior settings" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li><strong>Escalation alert condition</strong>: Write in plain English when you need a human (e.g. "When user asks for a human"). Or click a <strong>prebuilt condition</strong> tag like "Appointment booked", "Visitor asks for a human", "Complaint or frustration"</li>
+              <li>When triggered, you receive an email with context and a link to the conversation</li>
+              <li><strong>Greeting Message</strong>: Set the message shown after the visitor enters their name. Use <code>{{name}}</code> as a placeholder (e.g. "Hello {{name}}! How can I help you today?")</li>
+              <li><strong>Language</strong>: Select the primary language from the dropdown (e.g. English)</li>
+              <li>Click <span class="click-hint">Save Changes</span> at the bottom to apply all settings</li>
+            </ol>
+            <div class="info-box note">
+              <strong>ℹ️ Note</strong>
+              Voice phone escalation is configured separately under Configuration → Phone, not on this page.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 12: CHATBOT TEST & WIDGET -->
+      <section class="guide-section" id="chatbot-test">
+        <div class="section-header">
+          <div class="section-label">Section 12</div>
+          <h2>Chatbot Test & Widget</h2>
+          <p>Preview and test your chatbot before it goes live on your website and social channels.</p>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 1 — Test in the Sandbox</h3>
+            <p>Evaluate how your chatbot responds with your chosen knowledge base, tone, and prompt.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/11-chatbot-test.png" alt="Chatbot test page" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">Chatbot Test</span> in the sidebar</li>
+              <li>On the right <strong>Sandbox testing</strong> panel: pick a <strong>Knowledge base</strong>, <strong>Tone</strong>, and <strong>Character</strong></li>
+              <li>Type a message in the sandbox chat to see how the AI responds</li>
+              <li>Copy the <strong>Live preview</strong> link with <span class="click-hint">Copy Link</span>, or click <span class="click-hint">Preview chatbot</span> to open it</li>
+              <li>Expand <strong>Optional: website embed code</strong> to get the snippet for your site</li>
+            </ol>
+            <div class="info-box note">
+              <strong>ℹ️ Note</strong>
+              The sandbox is for experiments only. When satisfied, apply the same settings under Configuration → Chatbot so they take effect on Facebook, WhatsApp, and Instagram.
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 2 — How the Widget Looks to Visitors</h3>
+            <p>This is the chat widget your customers see on your website.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap tall">
+              <img src="public/images/screenshots/29-chatbot-widget.png" alt="Chatbot widget preview" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>The widget shows your configured <strong>chatbot name</strong>, <strong>color</strong>, and <strong>greeting</strong></li>
+              <li>Visitors type in the <strong>"Type your message..."</strong> box and press the <strong>send button</strong> (paper plane icon)</li>
+              <li>Paste the embed snippet into your website's HTML before the closing <code>&lt;/body&gt;</code> tag to go live</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 13: PHONE -->
+      <section class="guide-section" id="phone">
+        <div class="section-header">
+          <div class="section-label">Section 13</div>
+          <h2>Phone Numbers</h2>
+          <p>Connect phone lines so voice agents can make and receive real phone calls.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why add phone numbers?</h4>
+            Voice agents need a real phone line to work. <strong>Outbound numbers</strong> let agents call customers. <strong>Inbound numbers</strong> let customers call in and talk to your agent. Without a number, agents can only be tested — not used live.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            Outbound numbers power test calls, batch campaigns, and one-off outbound calls from Agent Studio. Inbound numbers route incoming calls to the voice agent you assign. All call logs sync to Conversations.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Phone Configuration Overview</h3>
+            <p>Navigate to Configuration → Phone to manage your numbers.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/13-phone.png" alt="Phone configuration page" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">Configuration → Phone</span></li>
+              <li>The page shows two sections: <strong>Outbound numbers</strong> and <strong>Inbound numbers</strong></li>
+              <li>Summary cards at the top show your current count for each type</li>
+              <li>Click <span class="click-hint">Add outbound number</span> to set up a number for making calls</li>
+              <li>Click <span class="click-hint">Add inbound number</span> to set up a number for receiving calls</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Option A — Import via Twilio (Full Setup)</h3>
+            <p>Connect a Twilio phone number for outbound calling.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/14-add-number-twilio.png" alt="Add number via Twilio" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Click <span class="click-hint">Add outbound number</span> on the Phone page</li>
+              <li>Select <strong>Full Setup</strong> (left card) — for Twilio numbers used by outbound agents</li>
+              <li>Fill in the required fields:
+                <ul style="margin-top:8px;padding-left:20px;color:var(--text-muted)">
+                  <li><strong>Label</strong> — a friendly name (e.g. "Customer Support Line")</li>
+                  <li><strong>Phone Number</strong> — your Twilio number (e.g. +12625925656)</li>
+                  <li><strong>Provider Account SID</strong> — from your Twilio Console</li>
+                  <li><strong>Provider Auth Token</strong> — from your Twilio Console</li>
+                </ul>
+              </li>
+              <li>Click <span class="click-hint">Import phone number</span> to complete</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Option B — Generic SIP Trunk</h3>
+            <p>Connect any SIP provider (including Twilio) for inbound and/or outbound.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/15-sip-trunk.png" alt="SIP trunk configuration" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Click <span class="click-hint">Add outbound number</span> or <span class="click-hint">Add inbound number</span></li>
+              <li>Select <strong>Generic SIP Trunk</strong> (right card)</li>
+              <li>Check <strong>Supports Inbound</strong> and/or <strong>Supports Outbound</strong> based on your needs</li>
+              <li>Fill in: <strong>Label</strong>, <strong>Phone Number</strong>, <strong>Provider</strong></li>
+              <li>For outbound: enter <strong>SIP Address</strong>, <strong>Username</strong>, <strong>Password</strong>, <strong>Media Encryption</strong>, and <strong>Transport</strong></li>
+              <li>Click <span class="click-hint">Create SIP trunk</span> to save</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 14: AUTOMATIONS -->
+      <section class="guide-section" id="automations">
+        <div class="section-header">
+          <div class="section-label">Section 14</div>
+          <h2>Automations</h2>
+          <p>Automate repetitive work — when something happens, the platform does the next step for you. No coding needed.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why build automations?</h4>
+            Examples: when a call ends → send your team an email digest. When a lead form is submitted → add to Google Sheets. When someone messages on chat → notify your team. Automations save hours of manual follow-up.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            Once you toggle an automation to <strong>Active</strong> and save, it runs automatically every time the trigger event happens. Check <strong>Executions</strong> to see run history and confirm it's working.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 1 — Start a New Automation</h3>
+            <p>Begin from a template or a blank workflow.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/08-automations-empty.png" alt="Automations empty state" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">Automations</span> in the sidebar</li>
+              <li>Click <span class="click-hint">Browse templates</span> or the <span class="click-hint">+ New automation</span> button</li>
+              <li>Pick a <strong>Popular Starter</strong> such as "Inbound Call → Email Conversation Digest" or "Batch Call → Appointment Booking"</li>
+              <li>Or click <span class="click-hint">Blank automation</span> to build from scratch</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 2 — Browse Automation Templates</h3>
+            <p>Preview prebuilt workflows before using them.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/27-automation-templates.png" alt="Browse automation templates" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Filter templates by <strong>All, Calls, Email,</strong> or <strong>CRM</strong></li>
+              <li>Click a template card to preview its workflow steps on the right</li>
+              <li>Review each step: <strong>Trigger</strong> (what starts it) → <strong>Actions</strong> (what happens) → <strong>Conditions</strong> (logic gates)</li>
+              <li>Click <span class="click-hint">Use template</span> to create your automation from the template</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 3 — Automation Builder</h3>
+            <p>Edit, add steps, and activate your automation workflow.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/28-automation-builder.png" alt="Automation workflow builder" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li><strong>Step 1 (Trigger)</strong>: The event that starts the workflow (e.g. "Inbound Chatbox Message")</li>
+              <li><strong>Step 2+ (Actions)</strong>: What the system does automatically (e.g. "Send Email")</li>
+              <li>Click the <strong>+ button</strong> between steps to add new actions or conditions</li>
+              <li>Each step shows <strong>"Setup done"</strong> when configured correctly</li>
+              <li>Toggle the <strong>Inactive → Active</strong> switch at the top-right to turn on the automation</li>
+              <li>Click <span class="click-hint">Save</span> at the bottom-right to save changes</li>
+              <li>Click <span class="click-hint">Executions</span> to view run history and logs</li>
+            </ol>
+            <div class="info-box warning">
+              <strong>⚠️ Important</strong>
+              Automations won't run until you toggle them from "Inactive" to "Active" and click Save.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 15: ANALYTICS -->
+      <section class="guide-section" id="analytics">
+        <div class="section-header">
+          <div class="section-label">Section 15</div>
+          <h2>Analytics Dashboard</h2>
+          <p>See how your AI is performing — conversations, call minutes, channel breakdown, and usage over time.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why check analytics?</h4>
+            Know if your AI is actually being used. See which channels get the most messages, how many call minutes you've consumed, and whether conversations are growing — so you can plan capacity and improve your setup.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            Use the date range picker to review any period. Filter by channel to compare WhatsApp vs website chat vs voice. Call minutes help you track billing and plan outbound campaign volume.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Reading Your Analytics</h3>
+            <p>Filter by time range, channel, and team to understand your platform usage.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/12-analytics.png" alt="Analytics dashboard" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Click <span class="nav-hint">Analytics</span> in the sidebar</li>
+              <li>Select a <strong>time range</strong>: Today, Yesterday, Last 7 days, Last 30 days, or Custom</li>
+              <li>Filter by <strong>channel</strong>: All Channels, Website Chat, WhatsApp, Instagram, Facebook, Telegram, Voice Calls</li>
+              <li>Review the <strong>KPI cards</strong>: Call Minutes, Conversations, Chat Threads, Avg Duration, Active Channels</li>
+              <li>Green arrows show growth trends compared to the previous period</li>
+              <li>Scroll down for <strong>charts</strong>: Call Minutes Over Time and Conversations Over Time</li>
+              <li>Click <span class="click-hint">Export</span> to download a CSV report, or <span class="click-hint">Refresh</span> to update data</li>
+              <li>Check your <strong>Balance</strong> badge in the top-right for remaining voice call minutes</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 16: CRM -->
+      <section class="guide-section" id="crm">
+        <div class="section-header">
+          <div class="section-label">Section 16</div>
+          <h2>CRM</h2>
+          <p>Store structured business data in tables, then let your voice agents and chatbot search, create, and update records during live conversations.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why use CRM tables?</h4>
+            Contacts hold people. CRM tables hold <strong>structured data</strong> — leads, bookings, deals, support tickets, or any custom records with columns you define. This lets AI read and write real business data, not just chat.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            Once a table exists and tools are registered, your <strong>voice agent</strong> can look up a customer on a call, create a new lead, or update a record. Your <strong>chatbot</strong> can do the same in website chat. Data stays in your CRM table for your team to use.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 1 — Create a CRM Table</h3>
+            <p>Every CRM setup starts with at least one table. You can create empty tables or import from CSV/Excel.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/33-crm-tables.png" alt="CRM tables empty state" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Click <span class="nav-hint">CRM</span> in the left sidebar — you'll land on the <strong>CRM Tables</strong> view</li>
+              <li>If you have no tables, click <span class="click-hint">Create your first table</span> in the center</li>
+              <li>Or click <span class="click-hint">+ New Table</span> in the top-right to create a table manually</li>
+              <li>Name your table (e.g. "Leads", "Appointments", "Support Tickets") and add columns (name, email, phone, status, etc.)</li>
+              <li>To import existing data: click <span class="click-hint">Import to existing</span> or use the <strong>Import</strong> link in the top bar with a CSV/Excel file</li>
+              <li>Once created, your table appears in the list with a record count</li>
+            </ol>
+            <div class="info-box note">
+              <strong>ℹ️ CRM top navigation</strong>
+              From the CRM page you can switch between: <strong>Tables</strong> (manage data), <strong>Voice Agents</strong> (attach CRM to phone agents), and <strong>Chatbot</strong> (attach CRM to website chat).
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 2 — Attach CRM to a Voice Agent</h3>
+            <p>Let your phone agent search, create, and update CRM records while on a live call.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/34-crm-voice-agents.png" alt="CRM voice agents setup page" loading="lazy" />
+            </div>
+
+            <div class="purpose-grid">
+              <div class="purpose-box why">
+                <h4>Example use case</h4>
+                A caller says "I want to book an appointment." Your voice agent searches the CRM for existing records, creates a new booking row, or updates an existing one — all during the call, without a human typing.
+              </div>
+              <div class="purpose-box after">
+                <h4>After setup</h4>
+                On live calls, the agent can run <strong>Search</strong> (find a record), <strong>Create</strong> (add new row), and <strong>Update</strong> (change existing data). Primary key fields tell the system how to match records (e.g. by phone number or email).
+              </div>
+            </div>
+
+            <ol class="steps-list">
+              <li>From CRM, click <span class="click-hint">Voice Agents</span> in the top navigation</li>
+              <li>You must already have a voice agent created under <span class="nav-hint">AI → Agents</span>. If none exist, create one first</li>
+              <li>On the left, browse <strong>Available Voice Agents</strong> or search by name/agent ID</li>
+              <li>Click an agent card or <span class="click-hint">Open setup →</span> to open its CRM configuration page</li>
+              <li><strong>Step 1 — Choose a CRM table:</strong> Select which table this agent can access (e.g. "Appointments")</li>
+              <li><strong>Step 2 — Set primary keys:</strong> Pick column(s) used to match records (e.g. phone, email). The agent uses these to find the right row</li>
+              <li><strong>Step 3 — Register tools:</strong> Click <span class="click-hint">Register tools for [table name]</span> and configure:
+                <ul style="margin-top:8px;padding-left:20px;color:var(--text-muted)">
+                  <li><strong>Create record</strong> (POST) — agent adds a new row when caller provides info</li>
+                  <li><strong>Search record</strong> (GET) — agent looks up existing data by primary key</li>
+                  <li><strong>Update record</strong> (PATCH) — agent changes fields on an existing row</li>
+                </ul>
+              </li>
+              <li>Write a clear <strong>description</strong> for each tool so the AI knows when to use it during the call</li>
+              <li>Save — the tools are now attached to that voice agent for live calls</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Step 3 — Attach CRM to Your Chatbot</h3>
+            <p>Let website visitors search, create, and update CRM records through live chat.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="purpose-grid">
+              <div class="purpose-box why">
+                <h4>Example use case</h4>
+                A visitor on your website says "I'd like to register for the webinar." The chatbot creates a new row in your Leads table with their name and email — automatically, during the chat.
+              </div>
+              <div class="purpose-box after">
+                <h4>After setup</h4>
+                CRM tools are registered per user and used by the chatbot service. When a visitor's message matches a tool description, the chatbot reads or writes CRM data. Records appear in your CRM table immediately.
+              </div>
+            </div>
+
+            <ol class="steps-list">
+              <li>From CRM, click <span class="click-hint">Chatbot</span> in the top navigation</li>
+              <li>You need at least one CRM table created first (Step 1 above)</li>
+              <li><strong>Step 1 — Choose a CRM table:</strong> Click the table card your chatbot should access (e.g. "Leads")</li>
+              <li>Click <span class="click-hint">Register tools for [table name]</span></li>
+              <li>Configure the same three tools as voice agents:
+                <ul style="margin-top:8px;padding-left:20px;color:var(--text-muted)">
+                  <li><strong>Create record</strong> — chatbot adds new data from the conversation</li>
+                  <li><strong>Search record</strong> — chatbot looks up existing records</li>
+                  <li><strong>Update record</strong> — chatbot updates fields on a matched record</li>
+                </ul>
+              </li>
+              <li>Select <strong>primary key columns</strong> for matching records (click column chips to toggle)</li>
+              <li>Write descriptions in plain English for when each tool should run</li>
+              <li>Register each tool — they're now active for your website widget and dashboard chat</li>
+            </ol>
+            <div class="info-box tip">
+              <strong>💡 CRM vs HTTP tools</strong>
+              CRM tools read/write data inside CandexAI tables. HTTP tools call <em>your external APIs</em>. Use CRM tools for data you store in the platform; use HTTP tools for external systems you already have.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 17: CONTACTS -->
+      <section class="guide-section" id="contacts">
+        <div class="section-header">
+          <div class="section-label">Section 17</div>
+          <h2>Contacts</h2>
+          <p>Your customer database — everyone you call, message, or run campaigns to.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why manage contacts?</h4>
+            Contacts are the people your AI talks to. Store names, emails, phones, and organize them into <strong>lists</strong> and <strong>tags</strong> so batch campaigns and automations target the right audience.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            Contact lists appear when creating batch call campaigns. Individual contacts can be selected for outbound test calls. Imported contacts sync across the platform for outreach and CRM workflows.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Managing Your Contacts</h3>
+            <p>Your contact database powers campaigns, outbound calls, and CRM.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/09-contacts.png" alt="Contacts page" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">Contacts</span> in the sidebar</li>
+              <li>Click <span class="click-hint">+ Add contact</span> to add a single contact manually</li>
+              <li>Click <span class="click-hint">+ Add list</span> to create a new contact list for segmentation</li>
+              <li>Use the <strong>search bar</strong> to find contacts by name, email, or phone across your entire database</li>
+              <li>Use the <strong>time filter</strong> (All time) and column headers to sort and filter</li>
+              <li>Use the <strong>edit</strong> (pencil) and <strong>delete</strong> (trash) icons in the Actions column to manage each contact</li>
+              <li>Adjust <strong>Per page</strong> (30 / 60 / 90 / Custom) at the bottom to control list size</li>
+            </ol>
+            <div class="info-box tip">
+              <strong>💡 Tip</strong>
+              Contact lists created here can be selected directly when setting up a Batch Call campaign.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 18: INTEGRATIONS -->
+      <section class="guide-section" id="integrations">
+        <div class="section-header">
+          <div class="section-label">Section 18</div>
+          <h2>Integrations</h2>
+          <p>Connect external platforms so messages, data, and actions flow into CandexAI automatically.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-box why">
+            <h4>Why connect integrations?</h4>
+            Each integration unlocks a channel or data source: <strong>WhatsApp/Instagram/Facebook</strong> for messaging, <strong>Gmail</strong> for email automations, <strong>HubSpot/Salesforce/Zoho</strong> for CRM sync, <strong>Google Workspace</strong> for calendar and sheets, <strong>Shopify</strong> for product data.
+          </div>
+          <div class="purpose-box after">
+            <h4>What happens after?</h4>
+            Connected channels start sending messages to <strong>Conversations</strong>. CRM integrations sync data to your tables. Gmail enables email tools and automations. Connected tools also appear as actions in the <strong>Automation builder</strong>.
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Productivity & CRM Integrations</h3>
+            <p>Connect Google Workspace, Calendly, HubSpot, Salesforce, and Zoho CRM.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/19-integrations-crm.png" alt="Integrations CRM and productivity" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">Integrations</span> in the sidebar (or Settings → Integrations)</li>
+              <li>Use the <strong>category tabs</strong>: All, Productivity, CRM, E-commerce, Channels, Custom</li>
+              <li>Use the <strong>search bar</strong> to find a specific integration</li>
+              <li><strong>Google Workspace</strong>: Click <span class="click-hint">Connect</span> to enable Sheets export, Drive storage, and Calendar scheduling</li>
+              <li><strong>Calendly</strong>: Click <span class="click-hint">Connect</span> to let visitors book appointments through your chatbot</li>
+              <li><strong>HubSpot / Salesforce / Zoho CRM</strong>: Click <span class="click-hint">Connect</span> on each to sync contacts, leads, and deals</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Channels, E-commerce & Email</h3>
+            <p>Connect messaging platforms, online stores, and email.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/20-integrations-channels.png" alt="Integrations channels and ecommerce" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li><strong>Shopify</strong>: Click <span class="click-hint">Connect</span> to link your store via OAuth</li>
+              <li><strong>WooCommerce</strong>: Click <span class="click-hint">Connect</span> for WordPress e-commerce integration</li>
+              <li><strong>Outlook Calendar</strong>: Click <span class="click-hint">Connect</span> for Microsoft calendar and mail automation</li>
+              <li><strong>WhatsApp Business</strong>: Click <span class="click-hint">Connect</span> — you'll need Access Token, Phone Number ID, and WABA ID</li>
+              <li><strong>Instagram Direct</strong>: Click <span class="click-hint">Connect</span> — needs Access Token, Instagram Account ID, and Page ID</li>
+              <li><strong>Facebook Messenger</strong>: Click <span class="click-hint">Connect</span> — needs Page Access Token and Page ID</li>
+              <li><strong>Telegram Bot</strong>: Click <span class="click-hint">Connect</span> — needs Bot Token from @BotFather</li>
+              <li><strong>Meta Lead Ads</strong>: Click <span class="click-hint">Connect</span> for lead form automations</li>
+              <li><strong>Gmail</strong>: Click <span class="click-hint">Connect</span> to send and receive emails</li>
+            </ol>
+            <div class="info-box tip">
+              <strong>💡 Tip</strong>
+              Each integration shows "Not connected" status until you complete the OAuth or credential setup. Click "Refresh status" at the top to update connection states.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 19: TEAM -->
+      <section class="guide-section" id="team">
+        <div class="section-header">
+          <div class="section-label">Section 19</div>
+          <h2>Team Members</h2>
+          <p>Invite colleagues to collaborate in your workspace.</p>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Inviting Team Members</h3>
+            <p>Go to Team in the sidebar to manage your workspace collaborators.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/21-team-members.png" alt="Team members page" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">Team</span> in the sidebar (Settings → Team)</li>
+              <li>In the <strong>"Invite by email"</strong> section, type your colleague's email (e.g. colleague@company.com)</li>
+              <li>Click <span class="click-hint">Send Invite</span> — they'll receive an email with a link valid for 7 days</li>
+              <li>View <strong>Active members</strong> in the list below with their roles (Owner, Member)</li>
+              <li>Check <strong>Pending invitations</strong> to see invites that haven't been accepted yet</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 20: PROFILE -->
+      <section class="guide-section" id="profile">
+        <div class="section-header">
+          <div class="section-label">Section 20</div>
+          <h2>Profile & Billing</h2>
+          <p>Manage your account information, security, and subscription.</p>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-card-header">
+            <h3>Account Settings</h3>
+            <p>Update your profile, company details, and password.</p>
+          </div>
+          <div class="guide-card-body">
+            <div class="screenshot-wrap">
+              <img src="public/images/screenshots/18-profile-settings.png" alt="Profile settings page" loading="lazy" />
+            </div>
+            <ol class="steps-list">
+              <li>Go to <span class="nav-hint">Billing and Subscription</span> in the sidebar (or click your avatar → Settings)</li>
+              <li>Switch between <strong>Profile</strong> and <strong>Billing</strong> tabs at the top</li>
+              <li><strong>Avatar</strong>: Click <span class="click-hint">Change photo</span> to upload a profile picture (JPG, PNG, WebP · max 5 MB)</li>
+              <li><strong>Account Information</strong>: Fill in Name, Email, Phone, Company Name, Website, VAT, and Address fields</li>
+              <li>Click <span class="click-hint">Save Profile</span> to save your details</li>
+              <li><strong>Security</strong>: Enter Current Password, New Password, and Confirm New Password</li>
+              <li>Click <span class="click-hint">Update Password</span> to change your password</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <div class="quick-start" style="margin-top:48px">
+        <h2>🚀 You're Ready to Go!</h2>
+        <p style="color:var(--text-muted);margin-bottom:20px">Follow the 5-step quick start at the top of this guide, and you'll have your AI platform running in minutes.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="https://candexai.co.in" class="btn btn-primary" target="_blank" rel="noopener">Open CandexAI Platform →</a>
+          <a href="#account-access" class="btn btn-outline">Back to Quick Start</a>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div style="display:flex;align-items:center;gap:10px">
+      <img src="public/images/candex-logo.png" alt="CandexAI" style="height:24px" />
+      <span>© 2026 CandexAI. All rights reserved.</span>
+    </div>
+    <div>
+      <a href="https://candexai.co.in" target="_blank" rel="noopener">candexai.co.in</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:support@candexai.co.in">support@candexai.co.in</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script src="public/js/main.js"></script>
+</body>
+</html>
