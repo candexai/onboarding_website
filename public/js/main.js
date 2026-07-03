@@ -68,7 +68,10 @@ function initAccessGate() {
       const data = await res.json().catch(() => ({}));
 
       if (!res.ok) {
-        throw new Error(data.error || 'Access request failed.');
+        if (res.status === 404) {
+          throw new Error('Access service is unavailable. Please try again in a moment.');
+        }
+        throw new Error(data.error || 'Could not verify access. Please try again.');
       }
 
       unlockGuide(email);
